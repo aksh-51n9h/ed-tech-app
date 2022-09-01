@@ -1,0 +1,17 @@
+# Authentication Service
+
+Data Model -->  AppUser[uid, fullName, email, accessToken, role]
+-------------------------------------------------------------------
+
+Open Endpoints -->
+
+/signIn AppUser[email, password] ->  AppUser
+/signUp AppUser[fullName, email, password] -> AppUser
+/validateToken [token] --> true/false
+
+-------------------------------------------------------------------
+
+Authenticated Endpoints --> requires accessToken
+
+/updateName AppUser[fullName] -> AppUser
+/updatePassword AppUser[password] --> AppUser
