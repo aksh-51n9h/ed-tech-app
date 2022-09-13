@@ -33,7 +33,7 @@ namespace Backend.Controllers
         }
         [AllowAnonymous]
         [HttpPost]
-        [Route("login")]
+        [Route("signup")]
         public ActionResult<AppUser> SignUp(AppUser User)
         {
             var user=_service.Create(User);
