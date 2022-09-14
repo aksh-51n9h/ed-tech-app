@@ -31,6 +31,7 @@ namespace Backend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSwaggerGen();
             services.AddControllers();
             services.AddCors(c => { c.AddPolicy(name: "all", c => { c.AllowAnyOrigin(); }); });
             services.AddSingleton<IDatabaseSettings>(db => db.GetRequiredService<IOptions<DatabaseSettings>>().Value);
@@ -66,7 +67,15 @@ namespace Backend
             }
 
             app.UseHttpsRedirection();
-
+ app.UseSwagger(c =>
+    {
+        c.SerializeAsV2 = true;
+    });
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = string.Empty;
+            });
             app.UseRouting();
             app.UseAuthentication();
 
