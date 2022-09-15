@@ -44,7 +44,8 @@ namespace Backend
                     x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 
                 }
-                ).AddJwtBearer(x => {
+                ).AddJwtBearer(x =>
+                {
                     x.RequireHttpsMetadata = false;
                     x.SaveToken = true;
                     x.TokenValidationParameters = new TokenValidationParameters
@@ -67,10 +68,10 @@ namespace Backend
             }
 
             app.UseHttpsRedirection();
- app.UseSwagger(c =>
-    {
-        c.SerializeAsV2 = true;
-    });
+            app.UseSwagger(c =>
+               {
+                   c.SerializeAsV2 = true;
+               });
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
