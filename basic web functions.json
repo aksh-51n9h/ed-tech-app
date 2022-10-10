@@ -1,0 +1,875 @@
+{
+  "version": "7.7.4",
+  "timestamp": 1665398245280,
+  "projects": [
+    {
+      "name": "authenticationJWT",
+      "documents": [
+        {
+          "type": "project",
+          "folderIds": [],
+          "name": "authenticationJWT",
+          "selectedEnvironmentId": null,
+          "selectedFolderId": "6a8d5d30-b990-41c7-8917-f560fbb31032",
+          "selectedSidebarTab": null,
+          "selectedTabId": "6cb1d60b-9cf3-42aa-bae8-54d09ddae75e",
+          "sidebarWidth": 0.25078125,
+          "createdAt": 1661946786361,
+          "id": "2d946d2e-9145-4d90-81ef-6180bece28d5",
+          "selectedRequestId": null,
+          "updatedAt": 1665142872381,
+          "sidebarView": "requests"
+        },
+        {
+          "type": "folder",
+          "name": "authentication",
+          "description": null,
+          "collapsed": true,
+          "selectedEnvironmentId": null,
+          "requestIds": [],
+          "createdAt": 1661946977589,
+          "id": "b1f29cad-c83c-4c33-a219-f1383bc3dbd2",
+          "updatedAt": 1664995441569
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "b1f29cad-c83c-4c33-a219-f1383bc3dbd2",
+          "name": "authentication",
+          "url": "https://localhost:44324/api/name/authenticate",
+          "method": "POST",
+          "bodyType": "text",
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "{\"userId\":\"test1\",\"pwd\":\"password1\"}",
+          "authType": null,
+          "response": {
+            "contentType": "text/plain; charset=utf-8",
+            "headers": [
+              {
+                "name": "content-encoding",
+                "value": "gzip"
+              },
+              {
+                "name": "content-type",
+                "value": "text/plain; charset=utf-8"
+              },
+              {
+                "name": "date",
+                "value": "Wed, 31 Aug 2022 11:58:18 GMT"
+              },
+              {
+                "name": "server",
+                "value": "Microsoft-IIS/10.0"
+              },
+              {
+                "name": "vary",
+                "value": "Accept-Encoding"
+              },
+              {
+                "name": "x-powered-by",
+                "value": "ASP.NET"
+              }
+            ],
+            "responseText": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3QxIiwibmJmIjoxNjYxOTQ3MDk4LCJleHAiOjE2NjE5NTA2OTgsImlhdCI6MTY2MTk0NzA5OH0.lvRqXpmiJ0tnwlsD_Q-kyxN2dmHJ-IqAcBNTUr6CowE",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 3058,
+            "size": "180 bytes",
+            "sentRequest": {
+              "id": "1e21381c-d0fb-43bf-bb80-b2c1c2fc4df3",
+              "method": "POST",
+              "url": "https://localhost:44324/api/name/authenticate",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "data": "{\"userId\":\"test1\",\"pwd\":\"password1\"}",
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 1,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1661946982555,
+          "id": "1e21381c-d0fb-43bf-bb80-b2c1c2fc4df3",
+          "updatedAt": 1662507489870,
+          "previewMode": false,
+          "_inProgress": false,
+          "_rename": false
+        },
+        {
+          "type": "requestHeader",
+          "requestId": "1e21381c-d0fb-43bf-bb80-b2c1c2fc4df3",
+          "name": "Content-Type",
+          "value": "application/json",
+          "enabled": true,
+          "createdAt": 1661947075506,
+          "id": "dd44eec6-86a7-47e5-b2bf-9f7b82b63700",
+          "updatedAt": 1661947088029
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "b1f29cad-c83c-4c33-a219-f1383bc3dbd2",
+          "name": "Get req",
+          "url": "https://localhost:44324/api/Name",
+          "method": "GET",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/json; charset=utf-8",
+            "headers": [
+              {
+                "name": "content-type",
+                "value": "application/json; charset=utf-8"
+              },
+              {
+                "name": "date",
+                "value": "Wed, 31 Aug 2022 11:59:56 GMT"
+              },
+              {
+                "name": "server",
+                "value": "Microsoft-IIS/10.0"
+              },
+              {
+                "name": "x-powered-by",
+                "value": "ASP.NET"
+              }
+            ],
+            "responseText": "[\"cat\",\"meow\"]",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 1418,
+            "size": "14 bytes",
+            "sentRequest": {
+              "id": "145c0650-7fb4-45d3-90f3-87a74a8b1d79",
+              "method": "GET",
+              "url": "https://localhost:44324/api/Name",
+              "headers": {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3QxIiwibmJmIjoxNjYxOTQ3MDk4LCJleHAiOjE2NjE5NTA2OTgsImlhdCI6MTY2MTk0NzA5OH0.lvRqXpmiJ0tnwlsD_Q-kyxN2dmHJ-IqAcBNTUr6CowE"
+              },
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 1,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1661947136489,
+          "id": "145c0650-7fb4-45d3-90f3-87a74a8b1d79",
+          "_rename": false,
+          "updatedAt": 1662507503832,
+          "_inProgress": false
+        },
+        {
+          "type": "requestHeader",
+          "requestId": "145c0650-7fb4-45d3-90f3-87a74a8b1d79",
+          "name": "Content-Type",
+          "value": "application/json",
+          "enabled": true,
+          "createdAt": 1661947177461,
+          "id": "b2cb1607-3ef5-418f-8e40-e43704187dce",
+          "updatedAt": 1661947182862
+        },
+        {
+          "type": "requestHeader",
+          "requestId": "145c0650-7fb4-45d3-90f3-87a74a8b1d79",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3QxIiwibmJmIjoxNjYxOTQ3MDk4LCJleHAiOjE2NjE5NTA2OTgsImlhdCI6MTY2MTk0NzA5OH0.lvRqXpmiJ0tnwlsD_Q-kyxN2dmHJ-IqAcBNTUr6CowE",
+          "enabled": true,
+          "createdAt": 1661947177685,
+          "id": "d1001e5f-4d32-4d82-82ff-4773c5ea700f",
+          "updatedAt": 1661947194790
+        },
+        {
+          "type": "folder",
+          "name": "mongoDB",
+          "description": null,
+          "collapsed": true,
+          "selectedEnvironmentId": null,
+          "requestIds": [],
+          "createdAt": 1662031605911,
+          "id": "bb701dbf-22d5-4ac4-9e23-e1286a643c63",
+          "updatedAt": 1664995440878
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "bb701dbf-22d5-4ac4-9e23-e1286a643c63",
+          "name": "Post req",
+          "url": "https://localhost:44397/api/Student",
+          "method": "PUT",
+          "bodyType": "json",
+          "bodyXml": "",
+          "bodyJson": "x{\"Name\":\"abhinendra\",\"isGraduated\":true,\"courses\":[\"Javascript\",\"java\",\"flutter\"],\"gender\":\"male\",\"age\":33}",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/json; charset=utf-8",
+            "headers": [
+              {
+                "name": "content-type",
+                "value": "application/json; charset=utf-8"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 01 Sep 2022 13:28:45 GMT"
+              },
+              {
+                "name": "location",
+                "value": "https://localhost:44397/api/Student/6310b38ce91aea06caf81028"
+              },
+              {
+                "name": "server",
+                "value": "Microsoft-IIS/10.0"
+              },
+              {
+                "name": "x-powered-by",
+                "value": "ASP.NET"
+              }
+            ],
+            "responseText": "{\"id\":\"6310b38ce91aea06caf81028\",\"name\":\"abhinendra\",\"isGraduated\":true,\"courses\":[\"Javascript\",\"java\",\"flutter\"],\"gender\":\"male\",\"age\":33}",
+            "statusCode": 201,
+            "statusText": "",
+            "duration": 5469,
+            "size": "139 bytes",
+            "sentRequest": {
+              "id": "9cb69ff5-4778-457d-8a0a-0097bcd0764b",
+              "method": "POST",
+              "url": "https://localhost:44397/api/Student",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "data": "{\"Name\":\"abhinendra\",\"isGraduated\":true,\"courses\":[\"Javascript\",\"java\",\"flutter\"],\"gender\":\"male\",\"age\":33}",
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1662031609962,
+          "id": "9cb69ff5-4778-457d-8a0a-0097bcd0764b",
+          "updatedAt": 1662109081742,
+          "previewMode": false,
+          "_inProgress": false,
+          "_rename": false
+        },
+        {
+          "type": "requestHeader",
+          "requestId": "9cb69ff5-4778-457d-8a0a-0097bcd0764b",
+          "name": "Content-Type",
+          "value": "application/json",
+          "enabled": true,
+          "createdAt": 1662038805681,
+          "id": "d31d5fb6-7f47-4e22-8646-bd7925718739",
+          "updatedAt": 1662038822650
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "bb701dbf-22d5-4ac4-9e23-e1286a643c63",
+          "name": "GETbYiD",
+          "url": "https://localhost:44397/api/Student/63106b0da9f3aa1b4a8ad7dd",
+          "method": "GET",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/json; charset=utf-8",
+            "headers": [
+              {
+                "name": "content-type",
+                "value": "application/json; charset=utf-8"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 01 Sep 2022 13:37:41 GMT"
+              },
+              {
+                "name": "server",
+                "value": "Microsoft-IIS/10.0"
+              },
+              {
+                "name": "x-powered-by",
+                "value": "ASP.NET"
+              }
+            ],
+            "responseText": "{\"id\":\"63106b0da9f3aa1b4a8ad7dd\",\"name\":\"SUresh\",\"isGraduated\":true,\"courses\":[\"Javascript\",\"C#\",\"HTML\"],\"gender\":\"Male\",\"age\":0}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 1604,
+            "size": "129 bytes",
+            "sentRequest": {
+              "id": "c895241d-73b6-4c8d-abcb-58b4da6787a7",
+              "method": "GET",
+              "url": "https://localhost:44397/api/Student/63106b0da9f3aa1b4a8ad7dd",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1662039063086,
+          "id": "c895241d-73b6-4c8d-abcb-58b4da6787a7",
+          "updatedAt": 1662039517036,
+          "_inProgress": false,
+          "_rename": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "bb701dbf-22d5-4ac4-9e23-e1286a643c63",
+          "name": "pUT REQ",
+          "url": "https://localhost:44397/api/student/63106b0da9f3aa1b4a8ad7dd",
+          "method": "PUT",
+          "bodyType": "json",
+          "bodyXml": "",
+          "bodyJson": "{\"id\":\"63106b0da9f3aa1b4a8ad7dd\",\"name\":\"SUresh\",\"isGraduated\":true,\"courses\":[\"Javascript\",\"C#\",\"HTML\"],\"gender\":\"Male\",\"age\":55}",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "",
+            "headers": [
+              {
+                "name": "date",
+                "value": "Thu, 01 Sep 2022 13:40:06 GMT"
+              },
+              {
+                "name": "server",
+                "value": "Microsoft-IIS/10.0"
+              },
+              {
+                "name": "x-powered-by",
+                "value": "ASP.NET"
+              }
+            ],
+            "responseText": "",
+            "statusCode": 204,
+            "statusText": "",
+            "duration": 128,
+            "sentRequest": {
+              "id": "16430762-393c-4b9d-95df-b9909be02a4e",
+              "method": "PUT",
+              "url": "https://localhost:44397/api/student/63106b0da9f3aa1b4a8ad7dd",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "data": "{\"id\":\"63106b0da9f3aa1b4a8ad7dd\",\"name\":\"SUresh\",\"isGraduated\":true,\"courses\":[\"Javascript\",\"C#\",\"HTML\"],\"gender\":\"Male\",\"age\":55}",
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1662039523978,
+          "id": "16430762-393c-4b9d-95df-b9909be02a4e",
+          "_rename": false,
+          "updatedAt": 1662039606968,
+          "previewMode": false,
+          "_inProgress": false
+        },
+        {
+          "type": "requestHeader",
+          "requestId": "16430762-393c-4b9d-95df-b9909be02a4e",
+          "name": "Content-Type",
+          "value": "application/json",
+          "enabled": true,
+          "createdAt": 1662039572845,
+          "id": "8b24d979-96a2-40ad-8a70-f268ed371dbb",
+          "updatedAt": 1662039578455
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "bb701dbf-22d5-4ac4-9e23-e1286a643c63",
+          "name": "remove req",
+          "url": "https://localhost:44397/api/Student/63106b0da9f3aa1b4a8ad7dd",
+          "method": "DELETE",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "text/plain; charset=utf-8",
+            "headers": [
+              {
+                "name": "content-encoding",
+                "value": "gzip"
+              },
+              {
+                "name": "content-type",
+                "value": "text/plain; charset=utf-8"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 01 Sep 2022 13:40:48 GMT"
+              },
+              {
+                "name": "server",
+                "value": "Microsoft-IIS/10.0"
+              },
+              {
+                "name": "vary",
+                "value": "Accept-Encoding"
+              },
+              {
+                "name": "x-powered-by",
+                "value": "ASP.NET"
+              }
+            ],
+            "responseText": "Removed id 63106b0da9f3aa1b4a8ad7dd",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 232,
+            "size": "35 bytes",
+            "sentRequest": {
+              "id": "4dd0a3cd-9441-4e55-a3cb-a54f388ab583",
+              "method": "DELETE",
+              "url": "https://localhost:44397/api/Student/63106b0da9f3aa1b4a8ad7dd",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1662039626266,
+          "id": "4dd0a3cd-9441-4e55-a3cb-a54f388ab583",
+          "_rename": false,
+          "updatedAt": 1662039648477,
+          "_inProgress": false
+        },
+        {
+          "type": "folder",
+          "name": "bothtry",
+          "description": null,
+          "collapsed": false,
+          "selectedEnvironmentId": null,
+          "requestIds": [],
+          "createdAt": 1662108085530,
+          "id": "cda8c203-cd90-4f30-be2f-8e687e9ceeda",
+          "updatedAt": 1664995439958
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "cda8c203-cd90-4f30-be2f-8e687e9ceeda",
+          "name": "get all appusers",
+          "url": "https://localhost:44333/api/Authentication",
+          "method": "GET",
+          "bodyType": "json",
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": "basic",
+          "response": {
+            "contentType": "",
+            "headers": [
+              {
+                "name": "",
+                "value": ""
+              }
+            ],
+            "responseText": "",
+            "statusCode": 0,
+            "statusText": "Cancelled",
+            "duration": 1171,
+            "sentRequest": {
+              "id": "cb3f63c6-6e6a-46c6-818d-012282a3540d",
+              "method": "GET",
+              "url": "https://localhost:44333/api/Authentication",
+              "headers": {
+                "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVsc2VAb3V0bG9vay5jb20iLCJuYmYiOjE2NjMyNzY0NjYsImV4cCI6MTY2MzI4MDA2NiwiaWF0IjoxNjYzMjc2NDY2fQ.hT4kUabkGOrfzrXG5KjPpKEkBdjcGjvGdwPoV1S5564",
+                "Content-Type": "application/json"
+              },
+              "data": "",
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 1,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1662108092870,
+          "id": "cb3f63c6-6e6a-46c6-818d-012282a3540d",
+          "updatedAt": 1663276673392,
+          "previewMode": false,
+          "_inProgress": false,
+          "responseView": "body",
+          "_rename": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "cda8c203-cd90-4f30-be2f-8e687e9ceeda",
+          "name": "post a app user",
+          "url": "https://localhost:44309/api/Authentication",
+          "method": "POST",
+          "bodyType": "json",
+          "bodyXml": "",
+          "bodyJson": "{\n        \n        \"email\": \"Else@outlook.com\",\n        \"fullName\": \"akshay Singh\",\n        \"accessToken\": \"vadavauvauvadavau\",\n        \"role\": \"tau\",\n        \"userName\": \"akshay\",\n        \"passwordHash\": \"IronWedsSpider\"\n    }",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "",
+            "headers": [
+              {
+                "name": "date",
+                "value": "Tue, 06 Sep 2022 23:33:56 GMT"
+              },
+              {
+                "name": "server",
+                "value": "Microsoft-IIS/10.0"
+              },
+              {
+                "name": "www-authenticate",
+                "value": "Bearer"
+              },
+              {
+                "name": "x-powered-by",
+                "value": "ASP.NET"
+              }
+            ],
+            "responseText": "",
+            "statusCode": 401,
+            "statusText": "",
+            "duration": 53,
+            "sentRequest": {
+              "id": "ed36e288-82d0-4ff6-9f9e-aa770c32f0c1",
+              "method": "POST",
+              "url": "https://localhost:44309/api/Authentication",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "data": "{\n        \n        \"email\": \"Else@outlook.com\",\n        \"fullName\": \"akshay Singh\",\n        \"accessToken\": \"vadavauvauvadavau\",\n        \"role\": \"tau\",\n        \"userName\": \"akshay\",\n        \"passwordHash\": \"IronWedsSpider\"\n    }",
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 1,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1662499121752,
+          "id": "ed36e288-82d0-4ff6-9f9e-aa770c32f0c1",
+          "updatedAt": 1662507236892,
+          "_inProgress": false,
+          "_rename": false,
+          "previewMode": false,
+          "responseView": "raw"
+        },
+        {
+          "type": "requestHeader",
+          "requestId": "ed36e288-82d0-4ff6-9f9e-aa770c32f0c1",
+          "name": "Content-Type",
+          "value": "application/json",
+          "enabled": true,
+          "createdAt": 1662500424372,
+          "id": "534b9220-f23b-446f-81b2-156ba0e7ccbe",
+          "updatedAt": 1662500674323
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "cda8c203-cd90-4f30-be2f-8e687e9ceeda",
+          "name": "Get one app user",
+          "url": "https://localhost:44309/api/Authentication/6317ba4a483c29f9b0c20532",
+          "method": "GET",
+          "bodyType": null,
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/json; charset=utf-8",
+            "headers": [
+              {
+                "name": "content-type",
+                "value": "application/json; charset=utf-8"
+              },
+              {
+                "name": "date",
+                "value": "Tue, 06 Sep 2022 21:47:23 GMT"
+              },
+              {
+                "name": "server",
+                "value": "Microsoft-IIS/10.0"
+              },
+              {
+                "name": "x-powered-by",
+                "value": "ASP.NET"
+              }
+            ],
+            "responseText": "{\"id\":\"6317ba4a483c29f9b0c20532\",\"email\":\"something@gmail.com\",\"fullName\":\"harsh v mishra\",\"accessToken\":\"meowmeowmewowmmewowe\",\"role\":\"chicha\",\"userName\":\"harsh\",\"passwordHash\":\"somethingInTheWay\"}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 223,
+            "size": "198 bytes",
+            "sentRequest": {
+              "id": "5f22ac6a-5830-4322-9690-406787e1fb96",
+              "method": "GET",
+              "url": "https://localhost:44309/api/Authentication/6317ba4a483c29f9b0c20532",
+              "headers": {},
+              "data": null,
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 1,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1662500815780,
+          "id": "5f22ac6a-5830-4322-9690-406787e1fb96",
+          "_rename": false,
+          "updatedAt": 1662507687231,
+          "_inProgress": false
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "cda8c203-cd90-4f30-be2f-8e687e9ceeda",
+          "name": "authenticate",
+          "url": "https://localhost:44333/api/authentication/login",
+          "method": "POST",
+          "bodyType": "json",
+          "bodyXml": "",
+          "bodyJson": "{\n    \"Email\":\"Else@outlook.com\",\n    \"PasswordHash\":\"IronWedsSpider\"\n}",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "application/json; charset=utf-8",
+            "headers": [
+              {
+                "name": "content-type",
+                "value": "application/json; charset=utf-8"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 15 Sep 2022 21:43:21 GMT"
+              },
+              {
+                "name": "server",
+                "value": "Microsoft-IIS/10.0"
+              },
+              {
+                "name": "x-powered-by",
+                "value": "ASP.NET"
+              }
+            ],
+            "responseText": "{\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVsc2VAb3V0bG9vay5jb20iLCJuYmYiOjE2NjMyNzgyMDEsImV4cCI6MTY2MzI4MTgwMSwiaWF0IjoxNjYzMjc4MjAxfQ.TjyWo_g1731WP625RLSwMljqF1JlkpgI0fve5R_mMRc\",\"user\":{\"id\":null,\"email\":\"Else@outlook.com\",\"fullName\":null,\"accessToken\":null,\"role\":null,\"userName\":null,\"passwordHash\":\"IronWedsSpider\"}}",
+            "statusCode": 200,
+            "statusText": "",
+            "duration": 214,
+            "size": "340 bytes",
+            "sentRequest": {
+              "id": "eb9c3bba-e86c-4745-a19e-aa976cf9f08c",
+              "method": "POST",
+              "url": "https://localhost:44333/api/authentication/login",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "data": "{\n    \"Email\":\"Else@outlook.com\",\n    \"PasswordHash\":\"IronWedsSpider\"\n}",
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 0,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1662505644390,
+          "id": "eb9c3bba-e86c-4745-a19e-aa976cf9f08c",
+          "updatedAt": 1663278201752,
+          "_inProgress": false,
+          "previewMode": false,
+          "responseView": "body",
+          "_rename": false
+        },
+        {
+          "type": "requestHeader",
+          "requestId": "eb9c3bba-e86c-4745-a19e-aa976cf9f08c",
+          "name": "Content-Type",
+          "value": "application/json",
+          "enabled": true,
+          "createdAt": 1662505677508,
+          "id": "5f19be38-1b5c-40bc-b457-6d37c49c5ca2",
+          "updatedAt": 1662505692234
+        },
+        {
+          "type": "requestHeader",
+          "requestId": "cb3f63c6-6e6a-46c6-818d-012282a3540d",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVsc2VAb3V0bG9vay5jb20iLCJuYmYiOjE2NjMyNzY0NjYsImV4cCI6MTY2MzI4MDA2NiwiaWF0IjoxNjYzMjc2NDY2fQ.hT4kUabkGOrfzrXG5KjPpKEkBdjcGjvGdwPoV1S5564",
+          "enabled": true,
+          "createdAt": 1662507286751,
+          "id": "42809ba5-e160-49b4-9bdc-6380644045ef",
+          "updatedAt": 1663276482100
+        },
+        {
+          "type": "requestAuth",
+          "requestId": "cb3f63c6-6e6a-46c6-818d-012282a3540d",
+          "authType": "basic",
+          "username": "",
+          "password": "",
+          "createdAt": 1662507308495,
+          "id": "35ef9254-463a-4e51-9a2c-20a209601ab5"
+        },
+        {
+          "type": "requestHeader",
+          "requestId": "cb3f63c6-6e6a-46c6-818d-012282a3540d",
+          "name": "Content-Type",
+          "value": "application/json",
+          "enabled": true,
+          "createdAt": 1662507512118,
+          "id": "a7f5ae81-4d7e-4c3d-84c2-c6c7165b32c3",
+          "updatedAt": 1662543695480
+        },
+        {
+          "type": "requestHeader",
+          "requestId": "5f22ac6a-5830-4322-9690-406787e1fb96",
+          "name": "Authorization",
+          "value": "",
+          "enabled": true,
+          "createdAt": 1662507689139,
+          "id": "e5b2de6f-4309-4c38-950e-3f3fa41cb365",
+          "updatedAt": 1662507692401
+        },
+        {
+          "type": "request",
+          "projectId": null,
+          "folderId": "cda8c203-cd90-4f30-be2f-8e687e9ceeda",
+          "name": "validate token",
+          "url": "https://localhost:44309/api/authentication/validatetoken/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVsc2VAb3V0bG9vay5jb20iLCJuYmYiOjE2NjI1NDQzNzEsImV4cCI6MTY2MjU0Nzk3MSwiaWF0IjoxNjYyNTQ0MzcxfQ.l4fl7za21IJj49qHb_2vfLQI-Nj5ZbbUKUM3PThObQg",
+          "method": "GET",
+          "bodyType": "json",
+          "bodyXml": "",
+          "bodyJson": "",
+          "bodyText": "",
+          "authType": null,
+          "response": {
+            "contentType": "text/plain; charset=utf-8",
+            "headers": [
+              {
+                "name": "content-type",
+                "value": "text/plain; charset=utf-8"
+              },
+              {
+                "name": "date",
+                "value": "Thu, 08 Sep 2022 11:28:15 GMT"
+              },
+              {
+                "name": "server",
+                "value": "Microsoft-IIS/10.0"
+              },
+              {
+                "name": "x-powered-by",
+                "value": "ASP.NET"
+              }
+            ],
+            "responseText": "Token Expired or Incorrect",
+            "statusCode": 401,
+            "statusText": "",
+            "duration": 131,
+            "size": "26 bytes",
+            "sentRequest": {
+              "id": "22dc9769-a1bc-4d8d-8fa2-c792e46db15a",
+              "method": "GET",
+              "url": "https://localhost:44309/api/authentication/validatetoken/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVsc2VAb3V0bG9vay5jb20iLCJuYmYiOjE2NjI1NDQzNzEsImV4cCI6MTY2MjU0Nzk3MSwiaWF0IjoxNjYyNTQ0MzcxfQ.l4fl7za21IJj49qHb_2vfLQI-Nj5ZbbUKUM3PThObQg",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "data": "",
+              "multipart": null
+            }
+          },
+          "reqTabIndex": 0,
+          "resTabIndex": 1,
+          "description": null,
+          "reqPanelSize": null,
+          "resPanelSize": null,
+          "spec": null,
+          "createdAt": 1662635424961,
+          "id": "22dc9769-a1bc-4d8d-8fa2-c792e46db15a",
+          "updatedAt": 1662636524430,
+          "previewMode": false,
+          "_inProgress": false,
+          "_rename": false
+        },
+        {
+          "type": "tab",
+          "folderId": "bb701dbf-22d5-4ac4-9e23-e1286a643c63",
+          "title": "mongoDB",
+          "view": "FolderView",
+          "createdAt": 1665138965335,
+          "id": "7d48b13b-00cb-4216-85f6-a8c18f224394"
+        },
+        {
+          "type": "tab",
+          "folderId": "cda8c203-cd90-4f30-be2f-8e687e9ceeda",
+          "title": "bothtry",
+          "view": "FolderView",
+          "createdAt": 1665398106126,
+          "id": "f54d22da-4115-4a49-808d-47de92658cb9"
+        },
+        {
+          "type": "tab",
+          "requestId": "cb3f63c6-6e6a-46c6-818d-012282a3540d",
+          "title": "get all appusers",
+          "view": "HttpClient",
+          "createdAt": 1665398118541,
+          "id": "64d79c65-cf47-4fc6-9e9b-161b6887afda"
+        },
+        {
+          "type": "tab",
+          "requestId": "ed36e288-82d0-4ff6-9f9e-aa770c32f0c1",
+          "title": "post a app user",
+          "view": "HttpClient",
+          "createdAt": 1665398144025,
+          "id": "874dfbc2-ae5d-4f2c-ad99-6d99b2b69b8e"
+        },
+        {
+          "type": "tab",
+          "requestId": "5f22ac6a-5830-4322-9690-406787e1fb96",
+          "title": "Get one app user",
+          "view": "HttpClient",
+          "createdAt": 1665398145161,
+          "id": "9e9ea869-2194-4ad9-b9d0-243ad0bc73fd"
+        }
+      ]
+    }
+  ]
+}
